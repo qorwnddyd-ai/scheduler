@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Node (npx serve 등)
+node_modules/
+
+# 로컬 도구 설정
+.claude/
+
+# 작업용 메모
+새 텍스트 문서.txt

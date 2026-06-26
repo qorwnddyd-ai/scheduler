@@ -1,0 +1,16 @@
+{
+  "name": "Scheduler",
+  "short_name": "Scheduler",
+  "description": "일정 · 할 일 · 반복 · 주간표 · 시계 · 집중 모드 · 클라우드 동기화",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fcf8ff",
+  "theme_color": "#fcf8ff",
+  "lang": "ko",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
