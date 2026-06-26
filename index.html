@@ -101,9 +101,8 @@
   .ds-day .ds-num { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; }
   .ds-day:hover { border-color: var(--primary); color: var(--text); transform: translateY(-1px); }
   .ds-day.today:not(.active) .ds-num { color: var(--primary); }
-  .ds-day.active { background: var(--primary); border-color: var(--primary); color: var(--card-solid);
-    box-shadow: 0 6px 14px rgba(70, 72, 212, 0.3); }
-  html[data-theme="dark"] .ds-day.active { color: #1b1b23; }
+  .ds-day.active { background: var(--text); border-color: var(--text); color: var(--bg);
+    box-shadow: var(--shadow); }
   .brand { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
   .brand .logo { width: 38px; height: 38px; border-radius: var(--r-md);
     background: linear-gradient(135deg, var(--primary), var(--primary-2));
@@ -423,15 +422,14 @@
 
   /* ===== M3 FAB ===== */
   .fab { position: fixed; right: 28px; bottom: 104px; z-index: 95;
-    width: 60px; height: 60px; border: none; cursor: pointer; border-radius: 18px;
-    background: var(--primary); color: var(--card-solid);
+    width: 56px; height: 56px; border: none; cursor: pointer; border-radius: var(--r-lg);
+    background: var(--text); color: var(--bg);
     display: grid; place-items: center;
-    box-shadow: 0 8px 18px rgba(70, 72, 212, 0.35), 0 2px 6px rgba(70, 72, 212, 0.25);
+    box-shadow: var(--shadow-lg);
     transition: transform .2s cubic-bezier(0.4,0,0.2,1), box-shadow .2s, background .2s; }
-  html[data-theme="dark"] .fab { color: #1b1b23; }
-  .fab .material-symbols-outlined { font-size: 28px; font-variation-settings: 'FILL' 1, 'wght' 500; }
-  .fab:hover { transform: scale(1.06) translateY(-2px); background: var(--primary-dark);
-    box-shadow: 0 12px 24px rgba(70, 72, 212, 0.4); }
+  .fab .material-symbols-outlined { font-size: 24px; font-variation-settings: 'wght' 500; }
+  .fab:hover { transform: scale(1.06) translateY(-2px); opacity: 0.92;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
   .fab:active { transform: scale(0.97); }
   @media (max-width: 600px) { .fab { right: 18px; bottom: 96px; width: 56px; height: 56px; } }
 
